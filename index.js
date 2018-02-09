@@ -12,6 +12,9 @@ bot.on('message', message => {
     if (message.content === 'tic') {
         message.reply('tac !')
     }
+    if (message.content === 'nyd') {
+        message.reply('pourrite !')
+    }
 })
 
 bot.login(process.env.TOKEN)
