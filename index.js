@@ -17,6 +17,9 @@ bot.on('message', message => {
     if (message.content === 'nyd') {
         message.reply('pourrite !')
     }
+    if (message.content === prefix + 'merde') {
+        message.sendMessage('!play https://www.youtube.com/watch?v=KyXW64L-XZA')
+    }
 })
 
 bot.login(process.env.TOKEN)
