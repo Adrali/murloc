@@ -18,7 +18,7 @@ bot.on('message', message => {
         message.reply('pourrite !')
     }
     if (message.content === prefix + 'merde') {
-        client.sendMessage('!play https://www.youtube.com/watch?v=KyXW64L-XZA')
+        message.reply('!play https://www.youtube.com/watch?v=KyXW64L-XZA')
     }
 })
 
