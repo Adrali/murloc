@@ -1,0 +1,35 @@
+10*Barraccuda Mrglgagh :
+	-Sang tellurique *5
+	-Barracuda Noir *5
+	-Beurre de musequard *4 
+	-Oignon des rivières *1
+
+10*Cotes telluriques façon BBQ :
+	-Sang tellurique *5
+	-Grandes cotes de gibier *5
+	-Piment dalapeño *5
+
+10*Raie-tempete au fumet de koi :
+	-Koï runecaille *5
+	-Raie-tempete *5
+	-Sel marin de flocons *2
+	-Beurre de musequard *2
+10*Saumon à la drogbar :
+	-Saumon de haut roc *5
+	-Escargot sombre-pierre *10
+	-Piment dalapeño *4
+	-Olive royale *10
+10*Terre et Mer de Suramar:
+	-Koï runecaille *5
+	-Jarret dégraissé *5
+	-Olive royale *4
+	-Sel marin de flocons *2
+
+Somptueux festin de Suramar :
+	Tout *3 :
+	-Barraccuda Mrglgagh
+	-Cotes telluriques façon BBQ
+	-Raie-tempete au fumet de koi
+	-Terre et Mer de Suramar
+	-Saumon à la drogbar
+	-Bacon
