@@ -17,6 +17,13 @@ bot.on('message', message => {
     if (message.content === 'nyd') {
         message.reply('pourrite !')
     }
+    if (message.content === prefix + 'festin') {
+        message.channel.send(`Tout pour un bon festin !`, {
+            files: [
+              "./Ce_qu_il_faut pour_un_bon_repas.txt"
+            ]
+          })
+    }
     if (message.content === prefix + 'merde') {
         message.channel.send('!play https://www.youtube.com/watch?v=KyXW64L-XZA')
     }
