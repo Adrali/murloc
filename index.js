@@ -1,8 +1,11 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-var prefix = 'm.'
-var fileSystem=new ActiveXObject("Scripting.FileSystemObject");
+const fs = require('fs');
 var Document
+var prefix = 'm.'
+const fs = require('fs');
+var Document
+
 
 bot.on('ready',function () {
     bot.user.setGame('Mrgrgl').catch(console.error)
@@ -19,8 +22,10 @@ bot.on('message', message => {
         message.reply('pourrite !')
     }
     if (message.content === prefix + 'festin') {
-        Document=fileSystem.OpenTextFile("Ce_qu_il_faut pour_un_bon_repas.txt", 1 ,true);
-        message.channel.send(Document.ReadAll())
+        fs.open("Ce_qu_il_faut pour_un_bon_repas.txt")
+        Document = fs.readFileSync("Ce_qu_il_faut pour_un_bon_repas.txt");
+        fs.close("Ce_qu_il_faut pour_un_bon_repas.txt");
+        message.channel.send(Document)
     }
     if (message.content === prefix + 'merde') {
         message.channel.send('!play https://www.youtube.com/watch?v=KyXW64L-XZA')
