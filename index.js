@@ -3,7 +3,6 @@ const bot = new Discord.Client()
 const fs = require('fs');
 var Document
 var prefix = 'm.'
-const fs = require('fs');
 var Document
 
 
