@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 const fs = require('fs');
 var Document
 var prefix = 'm.'
-var Document
+
 
 
 bot.on('ready',function () {
@@ -21,10 +21,8 @@ bot.on('message', message => {
         message.reply('pourrite !')
     }
     if (message.content === prefix + 'festin') {
-        fs.open("Ce_qu_il_faut pour_un_bon_repas.txt")
         Document = fs.readFileSync("Ce_qu_il_faut pour_un_bon_repas.txt");
-        fs.close("Ce_qu_il_faut pour_un_bon_repas.txt");
-        message.channel.send(Document)
+        message.channel.send(Document);
     }
     if (message.content === prefix + 'merde') {
         message.channel.send('!play https://www.youtube.com/watch?v=KyXW64L-XZA')
