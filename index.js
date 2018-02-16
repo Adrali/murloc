@@ -22,7 +22,6 @@ bot.on('message', message => {
     if (message.content === prefix + 'festin') {
         fs.open("Ce_qu_il_faut pour_un_bon_repas.txt", 'r', function (err, fd){});
         var Document = fs.readFileSync("Ce_qu_il_faut pour_un_bon_repas.txt");
-        fs.close("Ce_qu_il_faut pour_un_bon_repas.txt");
         message.channel.send(Document);
     }
     if (message.content === prefix + 'merde') {
